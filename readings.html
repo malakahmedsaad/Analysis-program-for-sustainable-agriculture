@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Readings</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="readings.js" type="module"></script>
+    </header>
+
+    <body>
+        <nav class="nav">
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+
+            <div class="tabs">
+                <ul class="l">
+                    <li onClick="window.location.assign('index.html');">Home</li>
+                    <li onClick="window.location.assign('readings.html');">Readings</li>
+                    <li onClick="window.location.assign('analysis.html');">Analysis</li>
+                    <li onClick="window.location.assign('insertion.html');">Data Insertion</li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <a href="#"><img id="email" src="icons/icons8-mail-50.png"></a>
+                <a href="#"><img id="facebook" src="icons/icons8-facebook-48.png"></a>
+                <a href="#"><img id="whatsapp" src="icons/icons8-whatsapp-48.png"></a>
+                <a href="#"><img id="linkedin" src="icons/icons8-linkedin-circled-48.png"></a>
+                <a href="#"><img id="instagram" src="icons/icons8-instagram-100.png"></a>
+                
+            </div>
+        </nav>
+
+        <div id="container">
+            <div class="specie">
+                <div class="col table_contain">
+                    <div class="title">pH readings</div>
+                    <div id="Ph_chart" style="width: 600px; height: 400px"></div>
+                    <div id="Ph_level">0</div>
+                    <div id="Ph_scale">
+                        <img src="Asset%205@3x.png">
+                        <img id="arrow" src="pngwing.com.png">
+                    </div>
+                </div>
+                
+                <div class="col table_contain">
+                    <div class="title">CO<sub>2</sub> readings</div>
+                    <div id="CO2_chart" style="width: 600px; height: 400px"></div>
+                    <div class="circle">
+                        <div id="CO2_level">0 <br> ppm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeqAzEjAAAAAFt0GCgYsA4l1W9bgYjvZdLIvZCo"></script>

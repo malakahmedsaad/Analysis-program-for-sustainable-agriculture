@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Data Insertion</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="insertion.js" type="module" defer></script>
+    </header>
+
+    <body>
+        <nav class="nav">
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+
+            <div class="tabs">
+                <ul class="l">
+                    <li onClick="window.location.assign('index.html');">Home</li>
+                    <li onClick="window.location.assign('readings.html');">Readings</li>
+                    <li onClick="window.location.assign('analysis.html');">Analysis</li>
+                    <li onClick="window.location.assign('insertion.html');">Data Insertion</li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <a href="#"><img id="email" src="icons/icons8-mail-50.png"></a>
+                <a href="#"><img id="facebook" src="icons/icons8-facebook-48.png"></a>
+                <a href="#"><img id="whatsapp" src="icons/icons8-whatsapp-48.png"></a>
+                <a href="#"><img id="linkedin" src="icons/icons8-linkedin-circled-48.png"></a>
+                <a href="#"><img id="instagram" src="icons/icons8-instagram-100.png"></a>
+                
+            </div>
+        </nav>
+
+        <div id="container">
+            <div id="species">
+            </div>
+            <hr>
+            <button id="ANS">Add new Species</button>
+        </div>
+    </body>
+
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeqAzEjAAAAAFt0GCgYsA4l1W9bgYjvZdLIvZCo"></script>
+
+    <script>/*
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LeqAzEjAAAAAFt0GCgYsA4l1W9bgYjvZdLIvZCo', {action: 'submit'}).then(function(token) {
+                    // Add your logic to submit to your backend server here.
+                    //const apiResponse = await fetch("");
+                });
+            });
+        }*/
+    </script>

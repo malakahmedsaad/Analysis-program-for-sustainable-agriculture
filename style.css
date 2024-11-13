@@ -1,0 +1,342 @@
+body{
+    margin: 0px;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 100px 630px 220px 0px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 75px;
+    z-index: 1;
+    padding: 0px 0px 0px 100px;
+/*
+    background-color: blanchedalmond;
+    */
+}
+
+.logo img{
+    /*background-color: burlywood;*/
+    height: 90px;
+    display: grid;
+}
+
+.tabs .l{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 150px 150px 150px 150px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.tabs .l li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: OpenSans;
+    text-align: center;
+    transition-duration: 0.5s;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+.tabs .l li:hover{
+    /*background-color: hsl(56deg 100% 95%);*/
+    background-color: blanchedalmond;
+    
+}
+.contacts{
+    position: relative;
+    width: 220px;
+    top: -10px;
+}
+.contacts a img{
+    width: 40px;
+}
+
+#consultation{
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+#consultation .form{
+    border-radius: 25px;
+    background-color: white;
+    position: absolute;
+    font-size: larger;
+    font-family: OpenSans;
+    display: grid;
+    justify-content: center;
+    text-align-last: center;
+    padding: 50px;
+}
+#consultation .form label{
+    height: 30px;
+}
+#consultation .form input{
+    height: 30px;
+    width: 400px;
+    border-radius: 10px;
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+    padding: 4px 16px;
+    font-family: OpenSans;
+}
+#consultation .form #submit{
+    width: 100px;
+    height: 50px;
+    background-color: hsl(126deg 50% 76%);
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 0px;
+    font-size: large;
+    font-family: OpenSans;
+    transition-duration: 0.3s;
+}
+#consultation .form #submit:hover{
+    background-color: hsl(0deg 90% 60%);
+    color: white;
+}
+#consultation .form #quit{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#container{
+    /*display: flex;
+    justify-content: space-around;*/
+    position: relative;
+    font-family: OpenSans;
+    margin-top: 25px;
+    width: 100%;
+    z-index: 0;
+}
+.main{
+    display: grid;
+    grid-template-columns: 550px auto 0px;
+    justify-content: space-between;
+}
+#dialog{
+    padding: 20px 200px 50px 100px;
+    font-size: larger;
+    font-family: Comfortaa,Sans-serif;
+    min-height: 30vh;
+    width: 500px;
+}
+#dialog p {
+    text-align: justify;
+}
+#image img{
+    height: 400px;
+}
+@font-face {
+    font-family: Comfortaa;
+    src: url(Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: OpenSans;
+    src: url("Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+}
+#buttons{
+    height: 100px;
+    background-color: hsl(23deg 90% 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#buttons button{
+    margin: 0px 100px 0px 100px;
+    height: 50px;
+    width: 250px;
+    font-size: larger;
+    font-family: OpenSans;
+    background-color: hsl(126deg 50% 76%);
+    border: none;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+#buttons button:hover{
+    background-color: hsl(0deg 90% 60%);
+    color: white;
+}
+.specie{
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px;
+    /*justify-content: space-evenly;*/
+    min-height: 100px;
+    background-color: bisque;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.specie .title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+#ANS{
+    width: 200px;
+    height: 50px;
+    margin: 50px 0px 100px 50px;
+    font-size: larger;
+}
+.remove{
+    position: absolute;
+    transform: translate(-8px , -108px);
+    background-color: aliceblue;
+    width: 0px;
+    height: 0px;
+    overflow:hidden;
+    transition-property: width, height, color, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+.remove:hover{
+    background-color: brown;
+    color: white;
+    
+}
+.col{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+}
+.col .title{
+    font-size: large;
+}
+.col .table{
+    
+    padding: 10px;
+    min-height: 100px;
+    background-color: coral;
+    
+}
+.col .table div{
+}
+.col input{
+    max-width: 150px;
+}
+
+
+
+
+
+
+
+.table_contain{
+    text-align: -webkit-center;
+}
+#Ph_level{
+    margin-top: 20px;
+    font-size: xx-large;
+    width: 250px;
+    height: 50px;
+    background-color: beige;
+    overflow: hidden;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.legends{
+    margin-top: 20px;
+    display: inline-grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto;
+    text-align: left;
+}
+.legends .legend{
+    
+}
+.legends .legend .color{
+    width: 30px;
+    height: 15px;
+    display: inline-block;
+}
+.legends .legend .label{
+    display: inline-block;
+    font-size: large;
+}
+
+#Ph_scale{
+    margin-top: 20px;
+    width: 250px;
+    height: 100px;
+    background-color: beige;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+}
+#Ph_scale #arrow{
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    top: 0px;
+    left: 50%;
+    transform: rotateZ(180deg) translate(50%, 0px);
+}
+#Ph_scale img{
+    position: relative;
+    top: 10px;
+    width: 1130px;
+    left: 119.5106px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transform: translate(0px);
+}
+
+.circle{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: beige;
+}
+#CO2_level{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+#OutputText{
+    width: 500px;
+    height: 100px;
+    margin: 20px;
+    font-size: large;
+}

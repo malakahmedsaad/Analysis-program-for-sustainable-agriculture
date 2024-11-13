@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Home page</title>
+        <link rel="stylesheet" href="style.css">
+    </header>
+
+    <body>
+        <nav class="nav">
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+
+            <div class="tabs">
+                <ul class="l">
+                    <li onClick="window.location.assign('index.html');">Home</li>
+                    <li onClick="window.location.assign('readings.html');">Readings</li>
+                    <li onClick="window.location.assign('analysis.html');">Analysis</li>
+                    <li onClick="window.location.assign('insertion.html');">Data Insertion</li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <a href="#"><img id="email" src="icons/icons8-mail-50.png"></a>
+                <a href="#"><img id="facebook" src="icons/icons8-facebook-48.png"></a>
+                <a href="#"><img id="whatsapp" src="icons/icons8-whatsapp-48.png"></a>
+                <a href="#"><img id="linkedin" src="icons/icons8-linkedin-circled-48.png"></a>
+                <a href="#"><img id="instagram" src="icons/icons8-instagram-100.png"></a>
+                
+            </div>
+        </nav>
+
+        <div id="container" class="main">
+            <div id="dialog">
+                <h2>Main idea</h2>
+                <p>For many aquatic creature species, ocean acidification is a vital challenge. On the other hand, the level of atmospheric carbon dioxide (CO<sub>2</sub>) plays an essential role in this story. Thus, our system relates this variable to water acidity. In addition to showing the variation in the aquatic environment, "Swimming in acid" provides analysis on the gathered data. The influence of environmental change on several fish species is depicted in the analysis tab. Making use of "Swimming in acid" system would enhance the opportunity of rescuing endangered species and maximising the utilisation of the available ones.</p>
+            </div>
+            <div id="image">
+                <img src="backgrounds/322116-340x227-orange-veil-tail-goldfish.jpg">
+            </div>
+            <div id="buttons">
+                <button id="displayVideo">Instructions</button>
+                <button id="displayConsultation">Quick consultation</button>
+            </div>
+        </div>
+        <div id="consultation">
+            <form class="form">
+                <div id="quit">Quit</div>
+                <h1>Instant help</h1>
+                <label>Your full name</label>
+                <input type="text" placeholder="Malak" required>
+                <label>Your email</label>
+                <input type="email" placeholder="example@gmail.com" required>
+                <label>Your phone number</label>
+                <input type="tel" placeholder="+20 123 456 7890"
+                       pattern="\+20 [0-9]{3} [0-9]{3} [0-9]{4}" required>
+                <button type="submit" id="submit">Send</button>
+            </form>
+        </div>
+    </body>
+    <script src="index.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeqAzEjAAAAAFt0GCgYsA4l1W9bgYjvZdLIvZCo"></script>
